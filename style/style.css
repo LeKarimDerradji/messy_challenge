@@ -26,7 +26,7 @@ h2 {
 
 h1,
 h2,
-h1 + p,
+h1+p,
 button {
   font-family: Bangers, sans-serif;
   letter-spacing: 2px;
@@ -34,9 +34,7 @@ button {
 
 /* ... Your turn! ... */
 
-@media (min-width: 640px) {
-  
-}
+@media (min-width: 640px) {}
 
 nav {
   position: fixed;
@@ -57,15 +55,37 @@ a {
   color: white;
 }
 
-main, header,#obstacles, #prizes, #apply, .wrap, .grid, .prizes-group, form, article, label, input {
+main,
+header,
+#obstacles,
+#prizes,
+#apply,
+.wrap,
+.grid,
+.prizes-group,
+form,
+article,
+label,
+input {
   display: flex;
 }
 
-main, header, #obstacles, #prizes, #apply, .wrap, .obstacles-group > article, .prizes-group > article, form, label {
+main,
+header,
+#obstacles,
+#prizes,
+#apply,
+.wrap,
+.obstacles-group>article,
+.prizes-group>article,
+form,
+label {
   flex-direction: column;
 }
 
-.obstacles-group > article, .prizes-group > article, header {
+.obstacles-group>article,
+.prizes-group>article,
+header {
   justify-content: center;
   align-items: center;
 }
@@ -78,7 +98,7 @@ main, header, #obstacles, #prizes, #apply, .wrap, .obstacles-group > article, .p
 header {
   min-height: 100vh;
   width: 100%;
-  background-image: url(/img/blue-splash.png);
+  background-image: url('/img/blue-splash.png');
   background-attachment: fixed;
   background-size: contain, cover;
   background-repeat: no-repeat;
@@ -104,26 +124,33 @@ section {
 }
 
 
-#obstacles, #prizes, #apply, .wrap, .grid {
+#obstacles,
+#prizes,
+#apply,
+.wrap,
+.grid {
   text-align: center;
 }
 
 
 
-/* ---------------------Sections---------------------------- */ 
+/* ---------------------Sections---------------------------- */
 
 
-#prizes, .obstacles-group article {
+#prizes,
+.obstacles-group article {
   background: var(--green);
 }
 
 /* Sections Specifics */
 
 
-.obstacles-group > article {
+.obstacles-group>article {
   margin: 0.7rem;
   padding: 3rem;
-  border-radius: 30px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
 }
 
 /* Colors*/
@@ -134,8 +161,8 @@ section {
 
 
 
-.prizes-group > article {
-  border: dashed yellow 5px;
+.prizes-group>article {
+  border: dashed yellow 2px;
   padding: 3rem;
   margin: 0.7rem;
 }
@@ -152,7 +179,8 @@ form {
   padding: 10px;
 }
 
-label, input {
+label,
+input {
   display: flex;
 }
 
