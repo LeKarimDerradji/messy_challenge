@@ -57,13 +57,22 @@ a {
   color: white;
 }
 
-main, header,#obstacles, #prizes, #apply, .wrap, .grid, .prizes-group, form, article {
+main, header,#obstacles, #prizes, #apply, .wrap, .grid, .prizes-group, form, article, label, input {
   display: flex;
 }
 
-main, header, #obstacles, #prizes, #apply, .wrap {
+main, header, #obstacles, #prizes, #apply, .wrap, .obstacles-group > article, .prizes-group > article, form, label {
   flex-direction: column;
 }
+
+.obstacles-group > article, .prizes-group > article, header {
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* ----------------Specification---------------------- */
+
 
 
 header {
@@ -74,21 +83,14 @@ header {
   background-size: contain, cover;
   background-repeat: no-repeat;
   background-position: center;
+  font-size: 3rem;
+  color: var(--orange);
 }
-
-header > h1, p {
-  margin: auto;
-}
-
-
-#obstacles, #prizes, #apply, .wrap, .grid {
-  text-align: center;
-}
-
 
 .wrap {
   justify-content: space-between;
   align-items: center;
+  padding: 3rem;
 }
 
 
@@ -97,17 +99,19 @@ header > h1, p {
   min-width: 100%;
 }
 
+section {
+  padding: 5rem;
+}
 
 
+#obstacles, #prizes, #apply, .wrap, .grid {
+  text-align: center;
+}
 
 
 
 /* ---------------------Sections---------------------------- */ 
-.obstacles-group > article, .prizes-group > article {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+
 
 #prizes, .obstacles-group article {
   background: var(--green);
@@ -142,13 +146,14 @@ header > h1, p {
 /* footer */
 
 form {
-  flex-direction: column;
   margin-bottom: 1rem;
+  align-items: flex-start;
+  width: 500px;
+  padding: 10px;
 }
 
 label, input {
   display: flex;
-  flex-direction: column;
 }
 
 input {
@@ -157,6 +162,7 @@ input {
   border-radius: 6px;
   border: 0;
   padding: 0.75rem;
+  width: 200%;
 }
 
 button {
@@ -166,6 +172,7 @@ button {
   padding: 1rem 0.75rem;
   margin-top: 0.75rem;
   text-shadow: 2px 2px 0 #aaa;
+  font-size: 1.5rem;
 }
 
 footer {
