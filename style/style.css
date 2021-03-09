@@ -135,7 +135,7 @@ section {
 
 
 .prizes-group > article {
-  border: dotted yellow 5px;
+  border: dashed yellow 5px;
   padding: 3rem;
   margin: 0.7rem;
 }
